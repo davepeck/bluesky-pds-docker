@@ -18,4 +18,4 @@ COPY pdsadmin.sh .
 COPY pdsadmin/ ./pdsadmin/
 
 # Command to start the PDS service
-CMD ["node", "--enable-source-maps", "index.js"]
+CMD ["node", "--enable-source-maps", "index.ts"]
