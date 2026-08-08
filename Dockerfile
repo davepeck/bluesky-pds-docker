@@ -1,5 +1,5 @@
 # Base image for the PDS service
-FROM ghcr.io/bluesky-social/pds:0.4.5009
+FROM ghcr.io/bluesky-social/pds:0.4.5026
 
 # Install necessary packages to support the pdsadmin.sh scripts
 RUN apk update && apk add --no-cache bash curl openssl jq util-linux

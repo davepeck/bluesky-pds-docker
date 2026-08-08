@@ -52,6 +52,10 @@ PDS_REPORT_SERVICE_URL=https://mod.bsky.app
 
 (TODO: convince myself that `PDS_DATA_DIRECTORY` only contains ephemeral data, and not configuration or state that needs to be persisted across container restarts. My [Dokku installation instructions](https://davepeck.org/notes/bluesky/self-hosting-a-bluesky-pds-with-dokku/) make the conservative assumption that we _do_ want to persist this data across restarts, by mounting a volume. But if you're using S3 for the blobstore, you might not want to do this.)
 
+### Design and brand considerations
+
+As of August 2026, Bluesky's PDS implementation supports a number of environment variables to customize its branding and visuals. See https://atproto.com/blog/pds-customization-and-metrics for details.
+
 ### Notes
 
 What's up with the `pdsadmin` command "variant" included in this repository, you ask?
